@@ -1,0 +1,235 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* global color variable css */
+:root{
+    --primary-color:#2D25A0;
+    --accent-color:#E02C6D;
+}
+
+/*------common css-------*/
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    margin:0;
+}
+
+/* top section css */
+.top-section{
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: space-evenly;
+    padding-left: 140px;
+    padding-right: 140px;
+    height: 677px;
+    align-items: center;
+    margin-bottom: 43px;
+    gap: 10px;
+ 
+    
+}
+
+/* top section header css */
+.top-section-header{
+    font-size: 64px;
+    color:#FFFFFF;
+    margin:0;
+    margin-bottom: 30px;
+}
+/* top section header banner css */
+.banner-img{
+    width: 560px;
+    height: 440px;
+    transition: width 2s, height 4s;
+    padding-left: 102px;
+    
+}
+
+/* top section header banner hover effect */
+.banner-img:hover{
+    width: 670px;
+    height: auto;
+}
+
+/* watch button css */
+.watch-cta{
+    width: 168px;
+    height: 44px;
+    text-decoration: none;
+    padding: 10px 24px;
+    background: var(--accent-color);
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: .5s ease-out;
+}
+
+/* watch button hover css */
+.watch-cta:hover{
+  border: 1px solid var(--accent-color); 
+  background-color: #FFFFFF; 
+  color: var(--accent-color); 
+  
+}
+/* players list sectiion css */
+.players-list-section{
+    display:flex;
+    flex-direction: column;
+}
+/* players list row css */
+.player-list-row{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* player columm css */
+.player{
+   margin-top: 27px;
+   width: 330px;
+   height: 474px; 
+   background: #FFFFFF;
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+   padding: 15px;
+   margin-right :15px;
+   margin-left :15px;
+ 
+}
+/* player image css */
+.player-img{
+    width: 100%;
+}
+/* player name css */
+.player-name{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;    
+}
+/* higlight section css */
+.highlights-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+/* higlight section left side css */
+.h-left-side{
+    width: 469px;
+    height: 309px;
+}
+
+/* higlight section image side css */
+
+.highlight-img{
+    width: 567px;
+    height: 427px;
+
+}
+/* footer css */
+footer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 63px;
+}
+
+.footer-logo{
+    width: 484px;
+    height: 110px;
+}
+ 
+.footer-icon li{
+    list-style: none; 
+    display: inline;   
+}
+
+.fab{
+ font-size: 22px;   
+ color: #969BAB; 
+ padding: 15px;
+}
+
+copright-text{
+flex: none;
+order: 2;
+flex-grow: 0;
+margin: 20px 0px;
+}
+
+/* Mobile version css */
+
+@media only screen and (max-width: 600px) {
+    .top-section{
+        width: 100%;
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0px;
+        }
+        
+        .top-section-header{
+            font-size: 36px;
+            color:#FFFFFF;
+            margin:0;
+            margin-bottom: 30px;
+        }
+
+        .banner-img{
+            width: 100%;
+            height: 440;
+            transition: width 2s, height 4s;
+            padding: 0px;
+            
+        }
+        .players-list-section{
+            padding:20px
+        }
+        .player-list-row{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .highlights-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:0;
+            padding: 16px;
+        }
+
+        .h-left-side{
+           
+            width: 100%;
+            height: 309px;
+        }
+
+        .highlight-img{
+            width: 100%;
+            height: 427px;
+        
+        }
+        
+        .footer-logo{
+            width: 80%;
+             
+        }
+       
+        
+  }
+ 
+
+ 
+ 
+
+
+
+
